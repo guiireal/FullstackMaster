@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "name": "modulo06",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
