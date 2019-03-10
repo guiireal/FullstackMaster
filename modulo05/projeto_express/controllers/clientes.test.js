@@ -8,8 +8,18 @@ describe('Testando Controller de Clientes', () => {
         let res = {
             send: function(){}
         }
+        const clientes = [
+            {
+                id: 1,
+                name: 'Guilherme'
+            },
+            {
+                id: 2, 
+                name: 'Maria'
+            }
+        ]
         let mock = sinon.moch(res)
-        mock.expects('send').once().withArgs('Full stack master')
+        mock.expects('render').once().withArgs('clientes', clientes)
         clientesController.listar({}, res)
     })
 })

@@ -9,13 +9,7 @@ const listar = (req, res) => {
             name: 'Maria'
         }
     ]
-    res.send(
-        `<table>
-         ${clientes.map(cliente => (
-            `<tr><td>${cliente.id}</td><td>${cliente.name}</td></tr>`))
-         }
-        </table>`
-    )
+    res.render('clientes', { clientes })
 }
 
 module.exports = {

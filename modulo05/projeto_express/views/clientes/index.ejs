@@ -1,0 +1,7 @@
+<% include ../partials/header%>
+    <ul>Lista de Clientes
+        <% clientes.forEach(cliente => { %>
+            <li><%= cliente.name %></li>
+        <% }) %>
+    </ul>
+<% include ../partials/footer%>
