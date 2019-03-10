@@ -16,7 +16,7 @@ Depois rodar um ou o outro (se vc tiver o yarn instalado):
 > yarn test
 --------------------------------------------------------------------------------
 
-Sinon: Biblioteca de testes para chamadas ass�ncronas e chamadas fake
+Sinon: Biblioteca de testes para chamadas assíncronas e chamadas fake
 
 npm install --save-dev sinon@2.4.1
 --------------------------------------------------------------------------------
@@ -25,7 +25,7 @@ Istanbul: Ferramenta de cobertura de testes
 
 > npm install --save-dev istanbul
 ou
-> yarn add --dev istanbul
+> yarn add istanbul --dev
 
 Editar o package.json adicionando a seguinte linha nos scripts:
 {
@@ -37,7 +37,7 @@ nyc: Ferramenta 2 de cobertura de testes
 
 > npm install --save-dev nyc
 ou
-> yarn add --dev nyc
+> yarn add nyc --dev 
 
 Editar o package.json adicionando a seguinte linha nos scripts:
 {
