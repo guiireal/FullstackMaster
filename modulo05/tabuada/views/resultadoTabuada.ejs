@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+    <div class="starter-template">
+        <h1>Tabuada do <%= numero %></h1>
+        <table class='table table-striped table-bordered table-hover'>
+            <% for (let i = 0; i <= 10; i++) { %>
+                <tr>
+                    <td><%= numero %>&nbsp;&nbsp; x &nbsp;&nbsp;<%= i %>&nbsp;&nbsp; = &nbsp;&nbsp;<%= (numero * i) %></td>
+                </tr>
+            <% } %>
+            
+        </table>
+    </div>
+
+<% include partials/footer %>
