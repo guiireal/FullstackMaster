@@ -1,0 +1,21 @@
+{
+  "name": "projeto_testes_unitarios",
+  "version": "1.0.0",
+  "description": "Projeto de testes unitários",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\mocha --reporter spec **/*.test.js",
+    "coverage": "node_modules\\.bin\\nyc mocha --reporter spec **/*.test.js"
+  },
+  "author": "Guilherme",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "nyc": "^13.3.0",
+    "sinon": "^2.4.1"
+  }
+}

@@ -1,0 +1,53 @@
+Bibliotecas de teste:
+
+mocha e chai
+
+Executando o teste:
+
+Adicionar ao package.json o seguinte script:
+
+"scripts": {
+    "test": "node_modules\\.bin\\mocha --reporter spec **/*.test.js"
+},
+
+Depois rodar um ou o outro (se vc tiver o yarn instalado):
+
+> npm test
+> yarn test
+--------------------------------------------------------------------------------
+
+Sinon: Biblioteca de testes para chamadas ass�ncronas e chamadas fake
+
+npm install --save-dev sinon@2.4.1
+--------------------------------------------------------------------------------
+
+Istanbul: Ferramenta de cobertura de testes
+
+> npm install --save-dev istanbul
+ou
+> yarn add --dev istanbul
+
+Editar o package.json adicionando a seguinte linha nos scripts:
+{
+    "coverage": "node_modules\\.bin\\istanbul _mocha --reporter spec **/*.test.js"
+}
+
+--------------------------------------------------------------------------------
+nyc: Ferramenta 2 de cobertura de testes
+
+> npm install --save-dev nyc
+ou
+> yarn add --dev nyc
+
+Editar o package.json adicionando a seguinte linha nos scripts:
+{
+    "coverage": "node_modules\\.bin\\nyc mocha --reporter spec **/*.test.js"
+}
+
+--------------------------------------------------------------------------------
+Rodar o DevTools para Debug no NodeJS:
+
+> node --inspect server.js
+
+
+
