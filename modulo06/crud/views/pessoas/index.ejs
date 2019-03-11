@@ -1,0 +1,34 @@
+<% include ../partials/header %>
+
+<div class="starter-template">
+    <h1>Pessoas</h1>
+    <table class='table table-striped table-hover table-bordered'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% pessoas.forEach(pessoa => { %>
+            <tr>
+                <td><%= pessoa.ID %></td>
+                <td><%= pessoa.NOME %></td>
+                <td><%= pessoa.CARGO %></td>
+                <td>
+                    <div class='btn-group' role='group' aria-label='...'>
+                        <a type='button' class='btn btn-outline-primary'
+                                href='/pessoas/editar/<%= pessoa.ID %>'>Editar</a>
+                        <a type='button'class='btn btn-outline-danger'
+                                href='/pessoas/excluir/<%= pessoa.ID %>'
+                                onclick="return confirm('Deseja realmente excluir ?')">Excluir</a>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<% include ../partials/footer %>
